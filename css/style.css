@@ -95,9 +95,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    justify-content: center;
 }
 
 .col-img {
+    position: relative;
     width: calc(20% - 10px);
     height: calc(20% - 10px);
     border-radius: 5px;
@@ -107,4 +109,63 @@ main {
 
 .col-img img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.col-img i{
+    color: red;
+}
+
+.name {
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    background-color: #212325;
+    color: #aaabac;
+}
+
+.relative {
+    position: relative;
+}
+
+i.chevron::after{
+    content: '\f077';
+    display: block;
+    position: absolute;
+    right: -5px;
+    top: 0px;
+}
+
+.footer-center > div,
+.footer-left > div,
+.footer-right > div {
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.green {
+    color: green;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 5px 20px 10px 20px;
+    border-radius: 10px;
 }
