@@ -8,6 +8,7 @@
 /* Common */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #4a4a4a;
 }
 
 /* Header */
@@ -58,7 +59,6 @@ header {
 /* Main */
 main {
     display: flex;
-    background-color: green;
     height: calc(100vh - 100px);
 }
 .col-left {
@@ -81,9 +81,6 @@ main {
     padding: 10px 20px;
 }
 
-.col-center {
-    width: 80%;
-}
 .pages {
     color: gray;
     text-align: center;
@@ -93,3 +90,22 @@ main {
     color: #2db7ff;
 }
 
+.col-center {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.col-img {
+    width: calc(20% - 10px);
+    height: calc(20% - 10px);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 3px;
+}
+
+.col-img img{
+    width: 100%;
+    height: 100%;
+}
